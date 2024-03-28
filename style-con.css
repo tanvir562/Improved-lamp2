@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(#ec8e09,#fa3429);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.title h2{
+    font-weight: 600;
+    color: rgb(0, 255, 179);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.title hr{
+    border: none;
+    border-radius: 15px;
+    height: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(0,255,179);
+}
+.inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: 50px;
+}
+@media (max-width: 1080px) {
+    .inputs {
+        width: 110%; }}
+.left textarea{
+    height: 150px;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+textarea{
+    font-family: sans-serif;
+}
+textarea::placeholder{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.inputs:focus{
+    border: 2px solid #038a15;
+}
+.inputs::placeholder{
+    color: black;
+}
+.left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    font-size: 16px;
+    gap: 10px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff990f,#fa6d66);
+    cursor: pointer;
+}
